@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change image onclick</title>
+    <style>
+        img{
+            height:300px;
+            width: 300px;
+        }
+
+        button{
+            margin: 10px;
+            padding: 6px;
+            background-color: lightblue;
+            color: blue;
+            border: 1px solid blue;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <img id="i1" src="https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/IMG/1601380698cake-600x600.jpeg" alt="">
+    
+    <br>
+    <button onclick="show()">Change Image</button>
+
+    <script>
+        i1 =document.getElementById("i1");
+        function show()
+        {
+            i1.src="https://i0.wp.com/gurgaonbakers.com/wp-content/uploads/2020/11/large-chocolaty-birthday-cake.jpg";
+        }
+    </script>
+    
+</body>
+</html>
